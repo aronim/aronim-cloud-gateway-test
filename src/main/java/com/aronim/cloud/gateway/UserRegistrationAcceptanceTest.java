@@ -1,11 +1,9 @@
-package com.kungfudev.cloud.gateway;
+package com.aronim.cloud.gateway;
 
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable;
@@ -26,23 +24,23 @@ public class UserRegistrationAcceptanceTest {
         webDriver.navigate().to("http://localhost:8000");
 
         webDriverWait
-                .until(elementToBeClickable(By.cssSelector("form.kdc-user-registration div.kdc-first-name input")))
+                .until(elementToBeClickable(By.cssSelector("form.ac-user-registration div.ac-first-name input")))
                 .sendKeys("Kevin");
 
         webDriverWait
-                .until(elementToBeClickable(By.cssSelector("form.kdc-user-registration div.kdc-last-name input")))
+                .until(elementToBeClickable(By.cssSelector("form.ac-user-registration div.ac-last-name input")))
                 .sendKeys("Sewell");
 
         webDriverWait
-                .until(elementToBeClickable(By.cssSelector("form.kdc-user-registration div.kdc-email-address input")))
+                .until(elementToBeClickable(By.cssSelector("form.ac-user-registration div.ac-email-address input")))
                 .sendKeys("kevin.sewell@aronim.com");
 
         webDriverWait
-                .until(elementToBeClickable(By.cssSelector("form.kdc-user-registration div.kdc-password input")))
+                .until(elementToBeClickable(By.cssSelector("form.ac-user-registration div.ac-password input")))
                 .sendKeys("P@ssw0rd");
 
         webDriverWait
-                .until(elementToBeClickable(By.cssSelector("form.kdc-user-registration button.kdc-register")))
+                .until(elementToBeClickable(By.cssSelector("form.ac-user-registration button.ac-register")))
                 .click();
     }
 }
