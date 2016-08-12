@@ -13,11 +13,11 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClick
  * Date: 2015-06-14
  * Time: 17h49
  */
-public class UserRegistrationAcceptanceTest {
-
+public class UserRegistrationAcceptanceTest
+{
     @Test
-    public void shouldRegisterUser() {
-
+    public void shouldRegisterUser()
+    {
         WebDriver webDriver = new FirefoxDriver();
         WebDriverWait webDriverWait = new WebDriverWait(webDriver, 5000);
 
